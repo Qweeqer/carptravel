@@ -20,6 +20,15 @@ module.exports = {
         bgMain: "#020F08",
         bgMobile: "#010A05",
       },
+      scale: {
+        "y-50": ".5",
+        50: "0.5",
+        100: "1",
+      },
+      opacity: {
+        50: "0.5",
+        100: "1",
+      },
     },
   },
   plugins: [],
