@@ -1,0 +1,9 @@
+{
+  "title": { "span1": "OUR ", "span2": "GALLERY" },
+  "buttons": { "back": "BACK", "next": "NEXT" },
+  "images": [
+    { "src": "/images/gallery1.jpg", "alt": "Lake" },
+    { "src": "/images/gallery2.jpg", "alt": "River" },
+    { "src": "/images/gallery3.jpg", "alt": "Hill" }
+  ]
+}

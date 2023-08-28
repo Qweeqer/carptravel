@@ -1,0 +1,25 @@
+{
+  "fields": {
+    "name": "Full name",
+    "email": "E-mail",
+    "position": "Position",
+    "phone": "Phone",
+    "message": "Message"
+  },
+  "placeholders": {
+    "name": "John Smith",
+    "email": "johnsmith@email.com",
+    "position": "Movie maker",
+    "phoneCode": "+ 38",
+    "phone": "097 12 34 567"
+  },
+  "errors": {
+    "name": "Incorrect name",
+    "email": "Invalid email",
+    "phone": "Incorrect phone",
+    "notEmpty": "This field can't be empty",
+    "notValid": "Invalid field"
+  },
+  "confirm": "I confirm my consent to the processing of personal data.",
+  "send": "Send"
+}
