@@ -42,9 +42,8 @@ export default function Hero() {
           <p className="font-extralight text-justify md:text-[16px] lg:text-[18px] leading-[20px] lg:leading-[24px] mb-[24px] md:mb-[28px]">
             {data.descr.text}
           </p>
-          <Button>
-            <span>{btnData.joinNow}</span>
-          </Button>
+          <Button label={btnData.joinNow} />
+
         </div>
       </div>
     </section>

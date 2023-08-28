@@ -3,7 +3,7 @@
 import React, { ReactElement } from "react";
 import { Link } from "react-scroll";
 
-export default function Button({ children }: { children: ReactElement | ReactElement[] }) {
+export default function Button({ label }: { label: string }) {
   return (
     <Link
       className="btn relative w-full flex justify-center items-center text-[18px] lg:text-[32px] font-bold py-[14px] bg-white/5 duration-300 hover:bg-white/20 focus:bg-white/20 uppercase cursor-pointer"
@@ -14,7 +14,7 @@ export default function Button({ children }: { children: ReactElement | ReactEle
       duration={600}
       isDynamic={true}
     >
-      {children}
+      <span>{label}</span>
     </Link>
   );
 }
