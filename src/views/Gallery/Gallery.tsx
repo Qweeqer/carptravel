@@ -58,17 +58,23 @@ export default function Gallery() {
             <li
               key={idx}
               className={`keen-slider__slide ${
-                idx === currentSlide ? "opacity-100 active-slide" : "opacity-50"
+                idx === currentSlide ? "active-slide" : ""
               }`}
             >
-              <Image
-                className="w-full h-auto min-h-full"
-                src={image.src}
-                alt={image.alt}
-                width={imgWidth}
-                height={imgHeight}
-                quality={100}
-              />
+              <div
+                className={`image-wrapper ${
+                  idx === currentSlide ? "" : "shrinked-slide"
+                }`}
+              >
+                <Image
+                  className="w-full h-auto"
+                  src={image.src}
+                  alt={image.alt}
+                  width={imgWidth}
+                  height={imgHeight}
+                  quality={100}
+                />
+              </div>
             </li>
           ))}
         </ul>
