@@ -35,16 +35,6 @@ export interface CareerTextListProps {
   }[];
 }
 
-export interface Contact {
-  name: string;
-  url: string;
-}
-
-export interface ContactListProps {
-  contacts: Contact[];
-  description: string;
-}
-
 export interface CheckboxProps {
   register: any;
   errors: any;
