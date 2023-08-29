@@ -22,7 +22,7 @@ body {
 
 @layer components {
   .title {
-    @apply text-[40px] md:text-[67px] lg:text-[98px] uppercase tracking-[-1.6px] md:tracking-[-2.68px] lg:tracking-[-3.92px] leading-[56px] md:leading-tight;
+    @apply text-[40px] md:text-[64px] lg:text-[98px] uppercase tracking-[-1.6px] md:tracking-[-2.68px] lg:tracking-[-3.92px] leading-[56px] md:leading-tight;
   }
   .input {
     @apply block w-full h-[24px] lg:h-[28px] py-[4px] pl-[8px] text-[13px] lg:text-[20px] bg-white/5 duration-300 hover:bg-white/10 focus:bg-white/10 placeholder:opacity-20 cursor-pointer;
@@ -39,18 +39,18 @@ body {
 }
 @media (min-width: 480px) {
   .container {
-    width: 480px;
+    width: 100%;
   }
 }
 @media (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 100%;
     padding: 0 32px;
   }
 }
 @media (min-width: 1280px) {
   .container {
-    width: 1280px;
+    width: 100%;
     padding: 0 24px;
   }
 }
@@ -141,4 +141,32 @@ body {
     width: 8px;
     height: 8px;
   }
+}
+
+
+@media (min-width: 768px) {
+.keen-slider__slide .image-wrapper {
+  /* transition: margin 0.3s ease, opacity 0.3s ease; */
+  
+  transition: scale 0.3s ease, opacity 0.3s ease;
+}
+
+.shrinked-slide {
+  /* margin: 15% 15%; 
+  opacity: 0.5; */
+  opacity: 0.5;
+  transform: scale(0.7)
+}
+}
+@media (min-width: 1280px) {
+.keen-slider__slide .image-wrapper {
+  /* transition: margin 0.3s ease, opacity 0.3s ease; */
+  transition: scale 0.3s ease, opacity 0.3s ease;
+}
+
+.shrinked-slide {
+  /* margin: 10% 15%;  */
+  opacity: 0.5;
+  transform: scale(0.7)
+}
 }
