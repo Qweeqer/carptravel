@@ -66,11 +66,6 @@ export interface WindowSize {
 }
 
 //Views//
-export interface TextDescriptionProps {
-  span: string;
-  text: string;
-  isBold?: boolean;
-}
 
 export interface ImageData {
   src: string;
