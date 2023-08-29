@@ -1,11 +1,19 @@
 import Image from "next/image";
 
-import { ISlideProps } from "@/types/interfaces";
+import { SlideProps } from "@/types/interfaces";
 import data from "@/data/offers.json";
 
-export default function Slide(slide: ISlideProps) {
-  const { bg_image, date, image, subtitle, descr } = slide;
+const BG_IMAGE_SIZES = "100vw";
+const SLIDE_IMAGE_WIDTH = 280;
+const SLIDE_IMAGE_HEIGHT = 220;
 
+export const Slide: React.FC<SlideProps> = ({
+  bg_image,
+  date,
+  image,
+  subtitle,
+  descr,
+}) => {
   return (
     <div className="relative h-full py-[54px] md:py-[64px] lg:py-[104px]">
       <Image
@@ -14,7 +22,7 @@ export default function Slide(slide: ISlideProps) {
         alt={bg_image.alt}
         fill
         quality={100}
-        sizes="100vw"
+        sizes={BG_IMAGE_SIZES}
       />
       <div className="container">
         <div className="mb:[14px] md:mb[40px] lg:mb[20px] md:flex md:gap-[170px] lg:gap-[162px] md:items-center">
@@ -33,9 +41,9 @@ export default function Slide(slide: ISlideProps) {
             className="w-full md:w-[463px] md:h-[370px] lg:w-[608px] lg:h-[434px] xs:mb-[12px] object-cover object-center"
             src={image.src}
             alt={image.alt}
-            width={280}
-            height={220}
-            sizes="100vw"
+            width={SLIDE_IMAGE_WIDTH}
+            height={SLIDE_IMAGE_HEIGHT}
+            sizes={BG_IMAGE_SIZES}
           />
           <div className="w-full flex flex-col gap-[224px] md:gap-[34px] lg:gap-0 mdOnly:mt-[197px]">
             <p className="text-[12px] md:text-start font-extralight tracking-[2.4px] lg:hidden">
@@ -49,4 +57,6 @@ export default function Slide(slide: ISlideProps) {
       </div>
     </div>
   );
-}
+};
+
+export default Slide;
