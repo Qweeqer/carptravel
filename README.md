@@ -14,7 +14,7 @@ CarpTravel is a travel-themed web application designed to provide users with a s
 
 ## Design 🎨
 
-- **Design Mockup**: SoftRyzen
+- **Design Mockup**: [SoftRyzen](https://internship.softryzen.com/)
 
 ## Features 🌟
 
