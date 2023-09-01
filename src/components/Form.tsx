@@ -10,7 +10,7 @@ import data from "@/data/form.json";
 import Checkbox from "./Checkbox";
 import InputError from "./InputError";
 
-export default function Form({ extended }: { extended: boolean }) {
+function Form({ extended }: { extended: boolean }) {
   const [checked, setChecked] = useState(false);
   const isBrowser = typeof window !== "undefined";
   const SESSION_KEY = "form";
@@ -189,3 +189,5 @@ export default function Form({ extended }: { extended: boolean }) {
     </>
   );
 }
+
+export default Form;

@@ -1,7 +1,7 @@
 import data from "@/data/contacts.json";
 import Form from "@/components/Form";
 
-export default function Contacts() {
+function Contacts() {
   return (
     <section className="py-[40px] md:py-[80px] lg:py-[100px]" id="contacts">
       <div className="container">
@@ -74,3 +74,5 @@ export default function Contacts() {
     </section>
   );
 }
+
+export default Contacts;

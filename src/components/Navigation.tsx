@@ -10,7 +10,7 @@ const LINK_PROPS = {
   duration: 600,
 };
 
-export default function Navigation({ onClick }: Navigate) {
+function Navigation({ onClick }: Navigate) {
   return (
     <nav>
       <ul className="flex flex-col md:flex-row gap-[48px] md:gap-[24px] lg:gap-[56px] items-center justify-center">
@@ -19,6 +19,7 @@ export default function Navigation({ onClick }: Navigate) {
             <Link
               className="text-[18px] md:text-[14px] font-normal tracking-[1.4px] border-b border-b-transparent duration-300 hover:border-b-white focus:border-b-white cursor-pointer"
               to={item.link}
+              href="/"
               onClick={onClick}
               {...LINK_PROPS}
             >
@@ -30,3 +31,5 @@ export default function Navigation({ onClick }: Navigate) {
     </nav>
   );
 }
+
+export default Navigation;

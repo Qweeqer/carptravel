@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import data from "@/data/buttons.json";
 import Navigation from "./Navigation";
 
-export default function NavBar() {
+function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { menu, close } = data;
 
@@ -49,3 +49,5 @@ export default function NavBar() {
     </div>
   );
 }
+
+export default NavBar;

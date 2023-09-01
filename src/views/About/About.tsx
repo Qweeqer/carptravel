@@ -1,6 +1,6 @@
 import data from "@/data/about.json";
 
-export default function About() {
+function About() {
   return (
     <section className="py-[55px] md:py-[64px] lg:py-[104px]" id="about">
       <div className="container md:relative">
@@ -42,3 +42,5 @@ export default function About() {
     </section>
   );
 }
+
+export default About;

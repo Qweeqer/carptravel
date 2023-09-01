@@ -6,7 +6,7 @@ import Career from "@/views/Career/Career";
 import Gallery from "@/views/Gallery/Gallery";
 import Contacts from "@/views/Contacts/Contacts";
 
-export default function Home() {
+function Home() {
   return (
     <>
       <Header />
@@ -21,3 +21,5 @@ export default function Home() {
     </>
   );
 }
+
+export default Home;

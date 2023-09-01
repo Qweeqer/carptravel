@@ -7,7 +7,7 @@ import "keen-slider/keen-slider.min.css";
 import { useWindowSize } from "@/hooks/useWindowSize";
 import data from "@/data/gallery.json";
 
-export default function Gallery() {
+function Gallery() {
   const [loaded, setLoaded] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
   const size = useWindowSize();
@@ -98,3 +98,5 @@ export default function Gallery() {
     </section>
   );
 }
+
+export default Gallery;

@@ -2,7 +2,7 @@
     import Form from "@/components/Form";
     import CareerTextList from "@/components/CareerTextList";
 
-    export default function Career() {
+    function Career() {
       return (
         <section className="py-[56px] md:py-[64px] lg:py-[104px]" id="career">
           <div className="container">
@@ -36,4 +36,6 @@
           </div>
         </section>
       );
-    }
+}
+    
+export default Career;
