@@ -12,7 +12,10 @@ export const metadata: Metadata = {
     description:
       "Explore the beauty of the Carpathian Mountains and uncover their hidden secrets.",
     url: "https://carptravel-one.vercel.app/",
-    images: [{ url: "/images/ogLogo.png", width: 1200, height: 630 }],
+    images: [
+      { url: "/images/ogLogo.png", width: 1200, height: 630 },
+      { url: "/images/ogLogo.jpg", width: 1200, height: 630 },
+    ],
     type: "website",
   },
 };
