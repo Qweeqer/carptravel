@@ -12,13 +12,12 @@ export const metadata: Metadata = {
     description:
       "Explore the beauty of the Carpathian Mountains and uncover their hidden secrets.",
     url: "https://carptravel-one.vercel.app/",
-    images: [{ url: "/images/carptravel.png", width: 1200, height: 630 }],
+    images: [{ url: "/images/ogLogo.png", width: 1200, height: 630 }],
     type: "website",
   },
 };
 
 function RootLayout({ children }: { children: React.ReactNode }) {
-  console.log("metadata", metadata);
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
