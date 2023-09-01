@@ -3,7 +3,8 @@ import Image from "next/image";
 import errorIcon from "../../public/images/error.svg";
 import { InputErrorProps } from "@/types/interfaces";
 
-const InputError: React.FC<InputErrorProps> = ({ text }) => {
+function InputError(props: InputErrorProps) {
+  const { text } = props;
   if (!text) return null;
   return (
     <div className="absolute bottom-[-24px] right-0 flex items-center gap-[4px] justify-end">

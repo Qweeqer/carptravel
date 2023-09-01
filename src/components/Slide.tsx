@@ -7,13 +7,9 @@ const BG_IMAGE_SIZES = "100vw";
 const SLIDE_IMAGE_WIDTH = 280;
 const SLIDE_IMAGE_HEIGHT = 220;
 
-export const Slide: React.FC<SlideProps> = ({
-  bg_image,
-  date,
-  image,
-  subtitle,
-  descr,
-}) => {
+function Slide(props: SlideProps) {
+  const { bg_image, date, image, subtitle, descr } = props;
+
   return (
     <div className="relative h-full py-[54px] md:py-[64px] lg:py-[104px]">
       <Image
