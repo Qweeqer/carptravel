@@ -8,7 +8,7 @@ import data from "@/data/offers.json";
 import Slide from "@/components/Slide";
 import SliderButtons from "@/components/SliderButtons";
 
-export default function Offers() {
+function Offers() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
   const [sliderRef, instanceRef] = useKeenSlider({
@@ -44,3 +44,5 @@ export default function Offers() {
     </section>
   );
 }
+
+export default Offers;

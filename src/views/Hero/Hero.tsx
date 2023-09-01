@@ -4,7 +4,7 @@ import Button from "@/components/Button";
 import HeroTitle from "@/components/HeroTitle";
 
 
-export default function Hero() {
+function Hero() {
   const { title, descr } = data;
 
   return (
@@ -44,3 +44,5 @@ export default function Hero() {
     </section>
   );
 }
+
+export default Hero;
